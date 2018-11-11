@@ -14,6 +14,10 @@
 		BA01C2462195EBD500D78EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01C2442195EBD500D78EED /* LaunchScreen.storyboard */; };
 		BA01C2512195EBD600D78EED /* EventCombinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01C2502195EBD600D78EED /* EventCombinationTests.swift */; };
 		BA01C25C2195EBD600D78EED /* EventCombinationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01C25B2195EBD600D78EED /* EventCombinationUITests.swift */; };
+		BA01C26A2195EC0600D78EED /* Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01C2692195EC0600D78EED /* Combination.swift */; };
+		BA01C26C2195EF9700D78EED /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01C26B2195EF9700D78EED /* Event.swift */; };
+		BA01C26E2195F18B00D78EED /* CombinationAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01C26D2195F18B00D78EED /* CombinationAble.swift */; };
+		BA01C2702195F1CF00D78EED /* CombinationAbleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA01C26F2195F1CF00D78EED /* CombinationAbleType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		BA01C2572195EBD600D78EED /* EventCombinationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventCombinationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA01C25B2195EBD600D78EED /* EventCombinationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCombinationUITests.swift; sourceTree = "<group>"; };
 		BA01C25D2195EBD600D78EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA01C2692195EC0600D78EED /* Combination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combination.swift; sourceTree = "<group>"; };
+		BA01C26B2195EF9700D78EED /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		BA01C26D2195F18B00D78EED /* CombinationAble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationAble.swift; sourceTree = "<group>"; };
+		BA01C26F2195F1CF00D78EED /* CombinationAbleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationAbleType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				BA01C23B2195EBD300D78EED /* AppDelegate.swift */,
 				BA01C23D2195EBD300D78EED /* ViewController.swift */,
+				BA01C2692195EC0600D78EED /* Combination.swift */,
+				BA01C26D2195F18B00D78EED /* CombinationAble.swift */,
+				BA01C26F2195F1CF00D78EED /* CombinationAbleType.swift */,
+				BA01C26B2195EF9700D78EED /* Event.swift */,
 				BA01C23F2195EBD300D78EED /* Main.storyboard */,
 				BA01C2422195EBD500D78EED /* Assets.xcassets */,
 				BA01C2442195EBD500D78EED /* LaunchScreen.storyboard */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA01C26C2195EF9700D78EED /* Event.swift in Sources */,
+				BA01C26A2195EC0600D78EED /* Combination.swift in Sources */,
+				BA01C26E2195F18B00D78EED /* CombinationAble.swift in Sources */,
 				BA01C23E2195EBD300D78EED /* ViewController.swift in Sources */,
 				BA01C23C2195EBD300D78EED /* AppDelegate.swift in Sources */,
+				BA01C2702195F1CF00D78EED /* CombinationAbleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
