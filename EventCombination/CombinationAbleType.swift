@@ -10,7 +10,14 @@ import Foundation
 
 public protocol CombinationAbleType {
     
-    var isComplete: Bool {get set}
-    func preCombination() -> CombinationAble?
-    func nextCombination() -> CombinationAble?
+    associatedtype Element
+    var isComplete :Bool {get set}
+    func preCombination() -> CombinationAble<Element>?
+    func nextCombination() -> CombinationAble<Element>?
+}
+
+extension CombinationAbleType {
+    func create() -> CombinationAble<Element> {
+        
+    }
 }

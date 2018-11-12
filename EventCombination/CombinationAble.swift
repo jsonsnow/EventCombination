@@ -8,14 +8,15 @@
 
 import Foundation
 
-public class CombinationAble: CombinationAbleType {
+public class CombinationAble<E>: CombinationAbleType {
+    public typealias Element = E
+    
+    
     public func preCombination() -> CombinationAble? {
-        
+        ctAbstractMethod()
     }
     
     public func nextCombination() -> CombinationAble? {
-        <#code#>
+        ctAbstractMethod()
     }
-    
-    
 }

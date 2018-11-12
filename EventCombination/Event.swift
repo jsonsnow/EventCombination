@@ -8,9 +8,13 @@
 
 import Foundation
 
-public protocol Event {
-    associatedtype Element
+public enum Event<Element> {
+    /// Next element is the transfer data
+    case next(Element)
     
-    func next()
-
+    ///
+    case error(Swift.Error)
+    
+    ///Event completed with error
+    case completed
 }
