@@ -12,8 +12,7 @@ public class CombinationAble: CombinationAbleType {
     public func subscribe() {
         
     }
-    
-   
+        
     public typealias Action = ()->()
     public typealias ActionCallback = ()->()
     
@@ -33,8 +32,5 @@ public class CombinationAble: CombinationAbleType {
     public func subscribe(_ action: @escaping Action, _ callback: @escaping ActionCallback) {
         _action = action
         _callback = callback
-        
     }
-    
-    
 }

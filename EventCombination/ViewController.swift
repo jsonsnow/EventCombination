@@ -27,6 +27,20 @@ extension Combination where Base: UIViewController {
     
 }
 
+extension Combination where Base: UIViewController {
+    func loadDataAction(_ action, actionCallback) -> CombinationAble<Base> {
+        return CombinationAble {action, actionCallback in
+            action()
+            if let callback = actionCallback {
+                let res = actionCallback
+                self.isComplete = true
+                
+            }
+        }
+    }
+
+}
+
 extension Combination where Base: UIButton {
     
 

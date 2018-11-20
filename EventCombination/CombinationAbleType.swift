@@ -18,7 +18,11 @@ public protocol CombinationAbleType {
 }
 
 extension CombinationAbleType {
-    func subscribe(<#parameters#>) -> <#return type#> {
-        <#function body#>
+
+}
+
+extension CombinationAbleType {
+    func create() -> CombinationAble {
+    
     }
 }
