@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let btn = UIButton.init()
-        btn.ct.tap.nextCombination()?.preCombination()?.nextCombination()
+        //btn.ct.tap.nextCombination()?.preCombination()?.nextCombination()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -30,9 +30,6 @@ extension Combination where Base: UIViewController {
 extension Combination where Base: UIButton {
     
 
-    var tap: CombinationAble {
-        self.base.addTarget(self, action: Selector.init(("clickAction")), for: .touchUpInside)
-        return CombinationAble.init()
-    }
+    
 }
 

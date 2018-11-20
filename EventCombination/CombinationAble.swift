@@ -9,12 +9,31 @@
 import Foundation
 
 public class CombinationAble: CombinationAbleType {
-    public func preCombination() -> CombinationAble? {
+    public func subscribe() {
         
     }
     
+   
+    public typealias Action = ()->()
+    public typealias ActionCallback = ()->()
+    
+    private var _action: Action?
+    private var _callback: ActionCallback?
+    public var isComplete: Bool = false
+    
+    
+    public func preCombination() -> CombinationAble? {
+        return nil
+    }
+    
     public func nextCombination() -> CombinationAble? {
-        <#code#>
+        return nil
+    }
+    
+    public func subscribe(_ action: @escaping Action, _ callback: @escaping ActionCallback) {
+        _action = action
+        _callback = callback
+        
     }
     
     

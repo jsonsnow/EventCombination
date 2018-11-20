@@ -13,4 +13,12 @@ public protocol CombinationAbleType {
     var isComplete: Bool {get set}
     func preCombination() -> CombinationAble?
     func nextCombination() -> CombinationAble?
+    
+    func subscribe() -> Void 
+}
+
+extension CombinationAbleType {
+    func subscribe(<#parameters#>) -> <#return type#> {
+        <#function body#>
+    }
 }

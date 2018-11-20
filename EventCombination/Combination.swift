@@ -27,9 +27,11 @@ public struct Combination<Base> {
 public protocol CombinationCompatible {
     associatedtype CompatibleType
     
-    static var ct: Combination<CompatibleType>.Type {get set}
+    //static var ct: Combination<CompatibleType>.Type {get set}
     
     var ct: Combination<CompatibleType> { get set }
+    
+    func start()
 
 }
 
@@ -52,6 +54,7 @@ extension CombinationCompatible {
             
         }
     }
+    
 }
 
 import class Foundation.NSObject
